@@ -30,15 +30,15 @@ const createReleaseListItem = function (form) {
     releaseListItem.appendChild(title);
 
     const category = document.createElement('p');
-    category.textContent = document.getElementById("category").value;
+    category.textContent = form.category.value;
     releaseListItem.appendChild(category);
 
     const genre = document.createElement('p');
-    category.textContent = form.genre.value;
+    genre.textContent = form.genre.value;
     releaseListItem.appendChild(genre);
 
     const date = document.createElement('p');
-    category.textContent = form.release.value;
+    date.textContent = form.release.value;
     releaseListItem.appendChild(date);
 
     
